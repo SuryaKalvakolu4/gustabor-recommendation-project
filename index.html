@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gustabor – Patient Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="title">GUSTABOR RECOMMENDATION ENGINE</div>
+    <div class="nav-links">
+      <a href="index.html">Form</a>
+      <a href="query.html">Recommender</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </nav>
+
+  <main>
+    <form id="patientForm">
+      <h2>Patient Intake Form</h2>
+
+      <label>Patient ID</label>
+      <input type="text" name="patient_id" required />
+
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Taste Preferences</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="taste_pref" value="Sweet" /> Sweet</label>
+        <label><input type="checkbox" name="taste_pref" value="Salty" /> Salty</label>
+        <label><input type="checkbox" name="taste_pref" value="Bitter" /> Bitter</label>
+        <label><input type="checkbox" name="taste_pref" value="Umami" /> Umami</label>
+        <label><input type="checkbox" name="taste_pref" value="Sour" /> Sour</label>
+      </div>
+
+      <label>Texture Likes</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="texture_like" value="Crunchy" /> Crunchy</label>
+        <label><input type="checkbox" name="texture_like" value="Smooth" /> Smooth</label>
+        <label><input type="checkbox" name="texture_like" value="Soft" /> Soft</label>
+        <label><input type="checkbox" name="texture_like" value="Liquid" /> Liquid</label>
+      </div>
+
+      <label>Dietary Restrictions</label>
+      <input type="text" name="dietary_restriction" />
+
+      <label>Symptoms</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="symptom" value="Dry Mouth" /> Dry Mouth</label>
+        <label><input type="checkbox" name="symptom" value="Nausea" /> Nausea</label>
+        <label><input type="checkbox" name="symptom" value="Fatigue" /> Fatigue</label>
+        <label><input type="checkbox" name="symptom" value="Taste Loss" /> Taste Loss</label>
+      </div>
+
+      <fieldset>
+        <legend>Sensory Detection Scores (1–10)</legend>
+        <label>Sweet</label><input type="number" name="sensory_sweet" min="1" max="10" />
+        <label>Salty</label><input type="number" name="sensory_salty" min="1" max="10" />
+        <label>Bitter</label><input type="number" name="sensory_bitter" min="1" max="10" />
+        <label>Umami</label><input type="number" name="sensory_umami" min="1" max="10" />
+        <label>Sour</label><input type="number" name="sensory_sour" min="1" max="10" />
+      </fieldset>
+
+      <label>Known Deficits</label>
+      <input type="text" name="known_deficits" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

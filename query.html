@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gustabor – Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="title">GUSTABOR RECOMMENDATION ENGINE</div>
+    <div class="nav-links">
+      <a href="index.html">Form</a>
+      <a href="query.html">Recommender</a>
+      <a href="feedback.html">Feedback</a>
+    </div>
+  </nav>
+
+  <main>
+    <form id="queryForm">
+      <h2>Patient Query</h2>
+
+      <label>Patient ID</label>
+      <input type="text" name="patient_id" required />
+
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Query</label>
+      <textarea name="query" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="resultBox"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
