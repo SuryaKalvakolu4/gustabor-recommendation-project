@@ -1,4 +1,5 @@
-const API_URL = "";
+// In frontend/script.js
+const API_URL = "https://gustabor-backend.onrender.com";
 
 // ----------------------------
 // PATIENT FORM (index.html)
